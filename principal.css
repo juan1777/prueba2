@@ -1,0 +1,41 @@
+
+
+
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor{
+    width: 80%;
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+.header-redes, .header-logo{
+    display: flex;
+    justify-content: center;    
+}
+
+.header-redes>img{
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 768px) {
+    .header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header-redes{
+        justify-content: flex-end;
+    }
+    .header-logo{
+        justify-content: flex-start;
+    }
+    .contenedor{
+        padding: 40px;
+    }
+}
